@@ -27,7 +27,7 @@ export function Hero() {
               href="https://drive.google.com/file/d/1Q2HY2AVyPVOtmuIq6fUEOuxUIOKkeUqK/view"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+              className="inline-block px-4 py-2 bg-amber-300 text-gray-700 font-extrabold rounded-xl hover:bg-amber-400 transition"
             >
               VER CURRÍCULO
             </a>
@@ -58,9 +58,16 @@ export function Hero() {
 
         <div className="flex flex-col items-center justify-center gap-6 mt-6 lg:hidden">
           <span className="text-2xl text-white font-semibold">Confira meu Curriculo:</span>
-          <button className="w-[200px] h-[40px] bg-amber-300 text-gray-700 font-extrabold rounded-xl">
-            VER CURRICULO
-          </button>
+          {/* <button className="w-[200px] h-[40px] bg-amber-300 text-gray-700 font-extrabold rounded-xl"> */}
+            <a 
+              href="https://drive.google.com/file/d/1Q2HY2AVyPVOtmuIq6fUEOuxUIOKkeUqK/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 bg-amber-300 text-gray-700 font-extrabold rounded-xl hover:bg-amber-400 transition"
+            >
+              VER CURRÍCULO
+            </a>
+          {/* </button> */}
         </div>
       </div>
 

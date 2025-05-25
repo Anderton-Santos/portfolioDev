@@ -69,7 +69,7 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl'>CSS</h2>
+                    <h2 className='font-bold text-[28px]'>CSS</h2>
 
                     <span className='font-semibold text-[15px] xl:text-[18px]'>Linguagem usada para estilizar elementos HTML, definindo cores, tamanhos, espaçamentos e layouts.
 
@@ -101,9 +101,9 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl'>TYPE SCRIPT</h2>
+                    <h2 className='font-bold text-[28px]'>TYPE SCRIPT</h2>
 
-                    <span className='font-semibold text-[16px]'>Superset do JavaScript que adiciona tipagem estática para tornar o código mais seguro e fácil de manter.
+                    <span className='font-semibold text-[15px]'>Superset do JavaScript que adiciona tipagem estática para tornar o código mais seguro e fácil de manter.
 
                     </span>
 
@@ -117,9 +117,9 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl'>REACT.js</h2>
+                    <h2 className='font-bold text-[28px]'>REACT.js</h2>
 
-                    <span className='font-semibold text-[17px] xl:text-[18px]'>Biblioteca JavaScript para construir interfaces de usuário de forma eficiente e reutilizável usando componentes.
+                    <span className='font-semibold text-[16px] xl:text-[18px]'>Biblioteca JavaScript para construir interfaces de usuário de forma eficiente e reutilizável usando componentes.
 
                     </span>
 
@@ -147,7 +147,7 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-[22px] mb-4'>TAILWIND.css</h2>
+                    <h2 className='font-bold text-[22px] mb-2'>TAILWIND.css</h2>
 
                     <span className='font-semibold text-[18px]'>Framework CSS utilitário para estilizar rápido com classes prontas.
 
@@ -330,9 +330,9 @@ export function Skills() {
 
                     <BicepsFlexed className='w-[100px] h-[80px] mx-auto' />
 
-                    <h2 className='font-bold text-2xl mb-2'>TRABALHO EM EQUIPE</h2>
+                    <h2 className='font-bold text-[22px]'>TRABALHO EM EQUIPE</h2>
 
-                    <span className='font-semibold text-[18px]'>Colaboração eficaz com colegas para alcançar objetivos em comum.</span>
+                    <span className='font-semibold text-[17px]'>Colaboração eficaz com colegas para alcançar objetivos em comum.</span>
 
                 </div>
 
