@@ -39,7 +39,7 @@ export function Contact() {
                             href="https://www.linkedin.com/in/anderton-silva-165a32289/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Github"><Linkedin /> Linkedin</a>
+                            aria-label="Linkedin"><Linkedin /> Linkedin</a>
 
                         <a className="flex flex-row gap-2 hover:underline"
                             href="https://github.com/Anderton-Santos?tab=repositories"
@@ -51,7 +51,7 @@ export function Contact() {
                             href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Github"><Mail /> E-mail: anderton4321@gmail.com</a>
+                            aria-label="email"><Mail /> E-mail: anderton4321@gmail.com</a>
 
                         <a className="flex flex-row gap-2 hover:underline"
                             href="tel:+5579996931192"

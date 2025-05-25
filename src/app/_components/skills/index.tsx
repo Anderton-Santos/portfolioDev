@@ -44,7 +44,7 @@ export function Skills() {
             <section className='grid grid-cols-2 gap-6 md:grid-cols-3 xl:grid-cols-4 justify-items-center'>
 
 
-                <div className='bg-white w-[200px] h-[280px] p-6 border-2 border-black rounded-2xl mb-8 xl:w-[280px] 
+                <div className='bg-white w-[180px] h-[280px] p-6 border-2 border-black rounded-2xl mb-8 xl:w-[280px] 
                 transform transition duration-300 hover:scale-105'>
 
                     <Image
@@ -53,14 +53,14 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl mb-4'>HTML</h2>
+                    <h2 className='font-bold text-3xl mb-2'>HTML</h2>
 
-                    <span className='font-semibold text-[18px]'>Linguagem de marcação usada para estruturar o conteúdo de páginas web.
+                    <span className='font-semibold text-[17px]'>Linguagem de marcação usada para estruturar o conteúdo de páginas web.
                     </span>
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                 
                     <Image
@@ -69,7 +69,7 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl mb-2'>CSS</h2>
+                    <h2 className='font-bold text-3xl'>CSS</h2>
 
                     <span className='font-semibold text-[15px] xl:text-[18px]'>Linguagem usada para estilizar elementos HTML, definindo cores, tamanhos, espaçamentos e layouts.
 
@@ -77,7 +77,7 @@ export function Skills() {
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl mb-8 xl:w-[280px] 
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl mb-8 xl:w-[280px] 
                 transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -85,15 +85,15 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl mb-4'>JAVA SCRIPT</h2>
+                    <h2 className='font-bold text-3xl'>JAVA SCRIPT</h2>
 
-                    <span className='font-semibold text-[19px]'>Linguagem de programação usada para adicionar interatividade e dinamismo a páginas web.
+                    <span className='font-semibold text-[16px]'>Linguagem de programação usada para adicionar interatividade e dinamismo a páginas web.
 
                     </span>
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -101,15 +101,15 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl mb-4'>TYPE SCRIPT</h2>
+                    <h2 className='font-bold text-3xl'>TYPE SCRIPT</h2>
 
-                    <span className='font-semibold text-[18px]'>Superset do JavaScript que adiciona tipagem estática para tornar o código mais seguro e fácil de manter.
+                    <span className='font-semibold text-[16px]'>Superset do JavaScript que adiciona tipagem estática para tornar o código mais seguro e fácil de manter.
 
                     </span>
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-3 border-2 border-black rounded-2xl mb-8 xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-3 border-2 border-black rounded-2xl mb-8 xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -117,7 +117,7 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl mb-2'>REACT.js</h2>
+                    <h2 className='font-bold text-3xl'>REACT.js</h2>
 
                     <span className='font-semibold text-[17px] xl:text-[18px]'>Biblioteca JavaScript para construir interfaces de usuário de forma eficiente e reutilizável usando componentes.
 
@@ -125,14 +125,14 @@ export function Skills() {
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-3 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
+                <div className='bg-white w-[180px] h-[280px] p-3 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
                         src={next}
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl mb-4'>NEXT.js</h2>
+                    <h2 className='font-bold text-3xl mb-2'>NEXT.js</h2>
 
                     <span className='font-semibold text-[17px] xl:text-[18px]'>Framework React com renderização server-side, geração estática e roteamento automático.
 
@@ -140,14 +140,14 @@ export function Skills() {
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-6 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
+                <div className='bg-white w-[180px] h-[280px] p-6 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
                         src={tailwind}
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-2xl mb-4'>TAILWIND.css</h2>
+                    <h2 className='font-bold text-[22px] mb-4'>TAILWIND.css</h2>
 
                     <span className='font-semibold text-[18px]'>Framework CSS utilitário para estilizar rápido com classes prontas.
 
@@ -155,16 +155,16 @@ export function Skills() {
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
                         src={sass}
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl mb-1'>SASS</h2>
+                    <h2 className='font-bold text-3xl mb-2'>SASS</h2>
 
-                    <span className='font-semibold text-[18px]'>Pré-processador CSS que permite usar variáveis, aninhamento e funções para facilitar a escrita de estilos.
+                    <span className='font-semibold text-[16px]'>Pré-processador CSS que permite usar variáveis, aninhamento e funções para facilitar a escrita de estilos.
 
 
                     </span>
@@ -174,6 +174,10 @@ export function Skills() {
             </section>
 
 
+
+
+
+
             <div className='p-16'>
                 <span className='text-3xl font-semibold text-white'>Tecnologias Back-End</span>
                 <div className="h-1 w-64 bg-white mt-2 rounded mx-auto" />
@@ -181,7 +185,7 @@ export function Skills() {
 
             <section className='grid grid-cols-2 gap-6 md:grid-cols-3 xl:grid-cols-4 justify-items-center'>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl mb-8 xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl mb-8 xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -197,7 +201,7 @@ export function Skills() {
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -214,7 +218,7 @@ export function Skills() {
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl mb-8 xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl mb-8 xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -222,16 +226,16 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-3xl mb-1'>postgresSQL</h2>
+                    <h2 className='font-bold text-[26px] mb-1'>postgresSQL</h2>
 
-                    <span className='font-semibold text-[17px]'>Banco de dados relacional open-source, usado para armazenar e gerenciar dados com alta performance e segurança.
+                    <span className='font-semibold text-[16px]'>Banco de dados relacional open-source, usado para armazenar e gerenciar dados com alta performance e segurança.
 
 
                     </span>
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -248,7 +252,7 @@ export function Skills() {
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl mb-8 xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl mb-8 xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -258,14 +262,14 @@ export function Skills() {
 
                     <h2 className='font-bold text-3xl mb-2'>FIREBASE</h2>
 
-                    <span className='font-semibold text-[17px]'>Plataforma do Google que oferece backend pronto para apps, incluindo autenticação, banco de dados em tempo real e hospedagem.
+                    <span className='font-semibold text-[16px]'>Plataforma do Google que oferece backend pronto para apps, incluindo autenticação, banco de dados em tempo real e hospedagem.
 
 
                     </span>
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                     <Image
                         className='w-[50px] h-[50px] object-contain mx-auto xl:w-[80px] xl:h-[80px]'
@@ -302,6 +306,8 @@ export function Skills() {
 
             </section>
 
+
+
             <div className='p-16'>
                 <span className='text-3xl font-bold'>Habilidades coorporativas</span>
                 <div className="h-1 w-64 bg-white mt-2 rounded mx-auto" />
@@ -309,42 +315,42 @@ export function Skills() {
 
             <section className='grid grid-cols-2 gap-6 md:grid-cols-3 xl:grid-cols-4  justify-items-center'>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
 
                     <UserPlus className='w-[130px] h-[90px] mx-auto' />
 
-                    <h2 className='font-bold text-2xl mb-4'>FLEXIBILIDADE</h2>
+                    <h2 className='font-bold text-[23px] '>FLEXIBILIDADE</h2>
 
-                    <span className='font-semibold text-[17px]'>Capacidade de se adaptar a diferentes funções, equipes e desafios no ambiente de trabalho.</span>
+                    <span className='font-semibold text-[16px]'>Capacidade de se adaptar a diferentes funções, equipes e desafios no ambiente de trabalho.</span>
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
 
                     <BicepsFlexed className='w-[100px] h-[80px] mx-auto' />
 
-                    <h2 className='font-bold text-2xl mb-6'>TRABALHO EM EQUIPE</h2>
+                    <h2 className='font-bold text-2xl mb-2'>TRABALHO EM EQUIPE</h2>
 
                     <span className='font-semibold text-[18px]'>Colaboração eficaz com colegas para alcançar objetivos em comum.</span>
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
 
                     <ShieldUser className='w-[100px] h-[80px] mx-auto' />
 
-                    <h2 className='font-bold text-2xl mb-6'>COMPROMISSO</h2>
+                    <h2 className='font-bold text-[22px] '>COMPROMISSO</h2>
 
                     <span className='font-semibold text-[19px]'>Dedicação e responsabilidade para cumprir tarefas e prazos com excelência.</span>
 
                 </div>
 
-                <div className='bg-white w-[200px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
+                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px] transform transition duration-300 hover:scale-105'>
 
                     <Speech className='w-[100px] h-[80px] mx-auto' />
 
-                    <h2 className='font-bold text-2xl mb-6'>COMUNICAÇÃO</h2>
+                    <h2 className='font-bold text-[20px] mb-2'>COMUNICAÇÃO</h2>
 
                     <span className='font-semibold text-[20px]'>Habilidade de transmitir ideias com clareza e ouvir ativamente.
                     </span>
@@ -362,3 +368,5 @@ export function Skills() {
         </section>
     )
 }
+
+
