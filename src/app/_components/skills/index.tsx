@@ -60,7 +60,7 @@ export function Skills() {
 
                 </div>
 
-                <div className='bg-white w-[180px] h-[280px] p-2 border-2 border-black rounded-2xl xl:w-[280px]
+                <div className='bg-white w-[180px] h-[280px] p-1 border-2 border-black rounded-2xl xl:w-[280px]
                  transform transition duration-300 hover:scale-105'>
                 
                     <Image
@@ -69,7 +69,7 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-[28px]'>CSS</h2>
+                    <h2 className='font-bold text-[26px]'>CSS</h2>
 
                     <span className='font-semibold text-[15px] xl:text-[18px]'>Linguagem usada para estilizar elementos HTML, definindo cores, tamanhos, espaçamentos e layouts.
 
@@ -101,7 +101,7 @@ export function Skills() {
                         alt='Tecnologia html'
                     />
 
-                    <h2 className='font-bold text-[28px]'>TYPE SCRIPT</h2>
+                    <h2 className='font-bold text-[26px]'>TYPE SCRIPT</h2>
 
                     <span className='font-semibold text-[15px]'>Superset do JavaScript que adiciona tipagem estática para tornar o código mais seguro e fácil de manter.
 

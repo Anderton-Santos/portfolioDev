@@ -221,11 +221,11 @@ export function Projects() {
                                     <Image
                                         width={30}
                                         height={30}
-                                        src={sass}
+                                        src={tailwind}
                                         alt="node"
                                         objectFit="contain"
                                     />
-                                    <span className="text-black font-semibold w-auto">Sass</span>
+                                    <span className="text-black font-semibold w-auto">Tailwind</span>
                                 </div>
                             </div>
 
