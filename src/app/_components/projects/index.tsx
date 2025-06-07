@@ -4,9 +4,9 @@ import { use } from 'react'
 import { OrderContext } from '@/providers/modal';
 
 
-import projetoApi from '../../../../public/DevPizzaria.png'
+import projetoApi from '../../../../public/pededeli.png'
 import cilio from '../../../../public/Cilio.png'
-import devpizzaria from '../../../../public/Pizzaria.png'
+import pededeli from '../../../../public/pededeliweb.png'
 import closeDely from '../../../../public/closedely.png'
 import chamados from '../../../../public/controle.png'
 
@@ -25,6 +25,7 @@ import tailwind from '../../../../public/tailwindcss.png'
 import Image from "next/image";
 
 import Tilt from 'react-parallax-tilt'
+import Link from 'next/link';
 export function Projects() {
     const { isOpen, onRequestOpen } = use(OrderContext)
 
@@ -61,9 +62,11 @@ export function Projects() {
 
                             />
 
-                            <h1 className="text-center font-bold text-white text-3xl mb-2">Dev Pizzaria - API</h1>
+                            <h1 className="text-center font-bold text-white text-3xl mb-2">PedeDeli - API</h1>
                             <div className='text-white font-semibold p-2 text-center mb-4'>
-                                <span >API desenvolvida para dashboard Dev Pizzaria, a qual fornece toda a estrutura necessária para o cadastro e categorias dos produtos.</span>
+                                <span >API desenvolvida para dashboard(admin) PedeDeli, a qual fornece toda a estrutura necessária para o cadastro e categorias dos produtos
+                                    para serem exibidos na loja.
+                                </span>
                             </div>
 
                             <span className="p-4 font-semibold text-2xl text-white">Tecnologias utilizadas:</span>
@@ -119,8 +122,20 @@ export function Projects() {
                                 <span className='text-white text-2xl font-semibold'>Links para acesso:</span>
 
                                 <div className='flex gap-8 items-center justify-around p-6 text-[18px] font-bold text-white'>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>GitHub</span>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Linkedin</span>
+                                    <Link
+                                        href="https://github.com/Anderton-Santos/PedeDeli-API"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>GitHub</span>
+                                    </Link>
+
+                                    <Link
+                                        href="https://www.linkedin.com/posts/anderton-silva-165a32289_nodejs-typescript-express-activity-7337169248298897408-0Xlg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Linkedin</span>
+                                    </Link>
+
                                 </div>
                             </div>
 
@@ -142,22 +157,23 @@ export function Projects() {
                         <div className="bg-[rgba(18,18,19)] w-[400px] h-[650px] rounded-2xl">
                             <Image
                                 className="rounded-3xl p-2"
-                                src={devpizzaria}
+                                src={pededeli}
                                 alt="Pagina cadastro de produto do Sass"
                                 priority={true}
                                 quality={100}
 
                             />
 
-                            <h1 className="text-center font-bold text-white text-3xl mb-2">Dev Pizzaria</h1>
+                            <h1 className="text-center font-bold text-white text-3xl mb-2">PedeDeli - Web</h1>
 
                             <div className='text-white font-semibold p-2 text-center mb-4'>
-                                <span >Dashboard administrativo da pizzaria que permite ao gestor gerenciar produtos, organizar categorias, controlar mesas e acompanhar os pedidos em tempo real.
+                                <span >Painel administrativo completo que permite ao lojista cadastrar produtos, organizar por categorias e gerenciar pedidos.
+                                    No site, os clientes visualizam os produtos em tempo real, adicionam itens ao carrinho e finalizam seus pedidos com praticidade.
                                 </span>
                             </div>
-                            <span className="p-6 font-semibold text-2xl text-white">Tecnologias utilizadas:</span>
+                            <span className="p-4 font-semibold text-2xl text-white">Tecnologias utilizadas:</span>
 
-                            <div className="flex justify-center mt-8 gap-4 flex-wrap">
+                            <div className="flex justify-center mt-2 gap-4 flex-wrap">
                                 <div className="flex gap-2 bg-white w-fit px-2 rounded-2xl">
                                     <Image
                                         width={30}
@@ -213,13 +229,38 @@ export function Projects() {
                                 </div>
                             </div>
 
-                            <div className='p-6 mt-2'>
+                            <div className='p-4 mt-2'>
                                 <span className='text-white text-2xl font-semibold'>Links para acesso:</span>
 
-                                <div className='flex gap-8 items-center justify-around p-6 text-[18px] font-bold text-white'>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>GitHub</span>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Linkedin</span>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Youtube</span>
+                                <div className='flex gap-4 items-center justify-around p-6 text-[18px] font-bold text-white'>
+                                    <Link
+                                        href="https://github.com/Anderton-Santos/PedeDeli-Front"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>GitHub</span>
+                                    </Link>
+                                    <Link
+                                        href="https://www.linkedin.com/posts/anderton-silva-165a32289_nextjs-typescript-tailwindcss-activity-7337173373094891520-diLF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Linkedin</span>
+                                    </Link>
+
+                                    <Link
+                                        href="https://www.linkedin.com/posts/anderton-silva-165a32289_nextjs-typescript-tailwindcss-activity-7337173373094891520-diLF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Youtube</span>
+                                    </Link>
+
+                                    <Link
+                                        href="https://pede-deli-front-git-main-anderton-santos-projects.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span className='bg-gray-500 w-28 px-3 py-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Site</span>
+                                    </Link>
+
+
                                 </div>
                             </div>
 
@@ -293,9 +334,9 @@ export function Projects() {
                                 <span className='text-white text-2xl font-semibold'>Links para acesso:</span>
 
                                 <div className='flex gap-8 items-center justify-around p-6 text-[18px] font-bold text-white'>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>GitHub</span>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Linkedin</span>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Site</span>
+                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>GitHub</span>
+                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>Linkedin</span>
+                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>Site</span>
                                 </div>
                             </div>
 
@@ -384,8 +425,8 @@ export function Projects() {
                                 <span className='text-white text-2xl font-semibold'>Links para acesso:</span>
 
                                 <div className='flex gap-8 items-center justify-around p-6 text-[18px] font-bold text-white'>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>GitHub</span>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Youtube</span>
+                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>GitHub</span>
+                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>Youtube</span>
                                 </div>
                             </div>
 
@@ -482,8 +523,8 @@ export function Projects() {
                                 <span className='text-white text-2xl font-semibold'>Links para acesso:</span>
 
                                 <div className='flex gap-8 items-center justify-around p-6 text-[18px] font-bold text-white'>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>GitHub</span>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Linkedin</span>
+                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>GitHub</span>
+                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>Linkedin</span>
                                 </div>
                             </div>
 

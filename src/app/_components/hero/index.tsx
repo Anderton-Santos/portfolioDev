@@ -11,7 +11,7 @@ export function Hero() {
         <TechLogosMarquee />
       </div>
 
-      <div className="flex flex-col items-center justify-center lg:items-start ml-[10%]">
+      <div className="flex flex-col items-center justify-center lg:items-start lg:ml-[10%]">
         <section className="absolute top-20 p-8 z-[999] flex flex-col items-center text-center">
           <h1 className="text-2xl lg:text-5xl text-white font-semibold">Quem sou eu?</h1>
           <h1 className="text-7xl lg:text-9xl text-white font-bold">Anderton</h1>
@@ -24,7 +24,7 @@ export function Hero() {
           <div className="hidden lg:flex flex-col items-center justify-center gap-6 mt-14">
             <span className="text-2xl text-white font-semibold">Confira meu Curriculo:</span>
             <a
-              href="https://drive.google.com/file/d/1Q2HY2AVyPVOtmuIq6fUEOuxUIOKkeUqK/view"
+              href="https://drive.google.com/file/d/11ka7P2nGNdyStHiuHqmNtXxY8Z26lqxr/view"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-4 py-2 bg-amber-300 text-gray-700 font-extrabold rounded-xl hover:bg-amber-400 transition"
