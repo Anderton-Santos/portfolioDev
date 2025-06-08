@@ -247,7 +247,7 @@ export function Projects() {
                                     </Link>
 
                                     <Link
-                                        href="https://www.linkedin.com/posts/anderton-silva-165a32289_nextjs-typescript-tailwindcss-activity-7337173373094891520-diLF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ"
+                                        href="https://youtu.be/LNjW0GhPnXw"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Youtube</span>
@@ -334,9 +334,19 @@ export function Projects() {
                                 <span className='text-white text-2xl font-semibold'>Links para acesso:</span>
 
                                 <div className='flex gap-8 items-center justify-around p-6 text-[18px] font-bold text-white'>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>GitHub</span>
+                                    <Link href="https://github.com/Anderton-Santos/LeadingPage-LashDesigner"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>GitHub</span>
+                                    </Link>
+
                                     <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>Linkedin</span>
-                                    <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>Site</span>
+                                    <Link href="https://leading-page-lash-designer.vercel.app/"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110 cursor-pointer'>Site</span>
+                                    </Link>
+
                                 </div>
                             </div>
 
