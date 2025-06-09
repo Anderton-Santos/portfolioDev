@@ -247,7 +247,7 @@ export function Projects() {
                                     </Link>
 
                                     <Link
-                                        href="https://youtu.be/LNjW0GhPnXw"
+                                        href="https://youtu.be/xXRNyBCT2Yg"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <span className='bg-gray-500 w-24 p-1 text-center rounded-2xl transition duration-400 hover:bg-red-500 hover:scale-110'>Youtube</span>
