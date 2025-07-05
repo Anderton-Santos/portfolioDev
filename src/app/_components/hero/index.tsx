@@ -38,12 +38,12 @@ export function Hero() {
         </section>
 
 
-        <div className="absolute top-60 right-1/2 translate-x-1/2 lg:top-30 lg:right-[10%] lg:translate-x-0 p-8 mb-6 ">
+        <div className="absolute top-60 right-1/2 translate-x-1/2 lg:top-30 lg:right-[10%] lg:translate-x-0 p-8 mb-6">
           <Image
-            className="rounded-full"
+            className="rounded-full "
             src={anderDev}
             alt="Imagem de apresentação"
-            width={200}
+            width={300}
             height={200}
             priority={true}
           />

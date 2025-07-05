@@ -1,90 +1,74 @@
 "use client"
 
-import '../../page.module.css'
-import { Button } from "@/components/ui/button";
-
-import { Switch } from "@/components/ui/switch"
-
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
-
-import { Menu } from "lucide-react";
 import { useState } from 'react';
-
-
+import { Hamburger, X } from 'lucide-react';
 
 export function Header() {
-
-  const [mode, setMose] = useState(true)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setIsSidebarOpen(false); // fecha a sidebar ao clicar
     }
   };
 
-
   return (
-    <header className="absolute top-0 w-full bg-red-500 py-6 px-4 z-[999]">
-      <div className="max-w-[1280px] mx-auto flex md:flex-row items-center justify-between gap-6">
-        <h1 className="text-3xl font-bold">
-          AndertonSantos
-          {/* <span className="hidden lg:inline text-white">.dev</span> */}
-           <span className="lg:inline text-white">.dev</span>
-          <span className="">&lt;/&gt;</span>
-        </h1>
+    <>
+      <header className="fixed top-0 w-full bg-blue-900 py-6 px-4 z-[999] shadow-md">
+        <div className="max-w-[1280px] mx-auto flex items-center justify-between">
+          <h1 className="font-bold text-gray-400 text-2xl md:text-3xl">
+            AndertonSantos<span className="text-white">.dev</span><span>&lt;/&gt;</span>
+          </h1>
 
-        {/* <div className="hidden lg:inline"><Switch checked={mode} onCheckedChange={setMose} /></div> */}
-        <div className="hidden lg:hidden"><Switch checked={mode} onCheckedChange={setMose} /></div>
+          <button
+            className="lg:hidden text-white"
+            onClick={() => setIsSidebarOpen(true)}
+            aria-label="Abrir menu"
+          >
+            <Hamburger size={30} />
+          </button>
 
-        <nav className="hidden  lg:flex flex-wrap justify-center gap-8 text-2xl font-bold">
-          <button className='hover:text-white transition-colors duration-500' onClick={() => scrollToSection("")}>Home</button>
-          <button className='hover:text-white transition-colors duration-500' onClick={() => scrollToSection("sobre")}>Sobre</button>
-          <button className='hover:text-white transition-colors duration-500' onClick={() => scrollToSection("projetos")}>Projetos</button>
-          <button className='hover:text-white transition-colors duration-500' onClick={() => scrollToSection("habilidades")}>Habilidades</button>
-          <button className='hover:text-white transition-colors duration-500' onClick={() => scrollToSection("contato")}>Contato</button>
+          <nav className="hidden lg:flex gap-8 text-[18px] font-bold">
+            <button className="text-white underline hover:text-white" onClick={() => scrollToSection("")}>Home</button>
+            <button className="text-gray-400 hover:text-white" onClick={() => scrollToSection("sobre")}>Sobre</button>
+            <button className="text-gray-400 hover:text-white" onClick={() => scrollToSection("projetos")}>Projetos</button>
+            <button className="text-gray-400 hover:text-white" onClick={() => scrollToSection("habilidades")}>Habilidades</button>
+            <button className="text-gray-400 hover:text-white" onClick={() => scrollToSection("contato")}>Contato</button>
+          </nav>
+        </div>
+      </header>
+
+      {/* Sidebar Mobile */}
+      <div
+        className={`fixed top-0 right-0 h-full w-64 bg-blue-950 shadow-xl z-[1000] transform transition-transform duration-300 ${
+          isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex items-center justify-between p-4 border-b border-white">
+          <h2 className="text-white font-bold text-xl">Menu</h2>
+          <button onClick={() => setIsSidebarOpen(false)} aria-label="Fechar menu">
+            <X size={28} color="#FFF" />
+          </button>
+        </div>
+
+        <nav className="flex flex-col gap-6 p-6 text-white font-bold text-lg">
+          <button onClick={() => scrollToSection("")}>Home</button>
+          <button onClick={() => scrollToSection("sobre")}>Sobre</button>
+          <button onClick={() => scrollToSection("projetos")}>Projetos</button>
+          <button onClick={() => scrollToSection("habilidades")}>Habilidades</button>
+          <button onClick={() => scrollToSection("contato")}>Contato</button>
         </nav>
-
-        {/* <div className='lg:hidden'><Switch checked={mode} onCheckedChange={setMose} /></div> */}
-        <div className='hidden lg:hidden'><Switch checked={mode} onCheckedChange={setMose} /></div>
-
-
-        <Sheet>
-          {/* <SheetTrigger asChild className="lg:hidden"> */}
-          <SheetTrigger asChild className=" hidden lg:hidden">
-            <Button
-              className=" hover:bg-gray-500/50 transition duration-150 "
-              size="icon"
-            >
-              <Menu className="h-6 w-6" />
-            </Button>
-          </SheetTrigger>
-
-          <SheetContent side='right' className='w-[240px] sm:w-[300px] z-[9999]'>
-            <SheetTitle className='flex items-center justify-center p-8'>Menu</SheetTitle>
-
-            <nav className='flex flex-col items-center justify-center gap-4 font-bold text-lg transition duration-150'>
-              <button className=' hover:text-gray-600' onClick={() => scrollToSection("")}>Home</button>
-              <button className=' hover:text-gray-600' onClick={() => scrollToSection("sobre")}>Sobre</button>
-              <button className=' hover:text-gray-600' onClick={() => scrollToSection("projetos")}>Projetos</button>
-              <button className=' hover:text-gray-600' onClick={() => scrollToSection("habilidades")}>Habilidades</button>
-              <button className=' hover:text-gray-600' onClick={() => scrollToSection("contato")}>Contato</button>
-            </nav>
-
-
-          </SheetContent>
-        </Sheet>
-
-
       </div>
-    </header>
+
+      {/* Overlay quando a sidebar estiver aberta */}
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[999]"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+    </>
   );
 }
-
