@@ -50,28 +50,28 @@ const backSkills: SkillItem[] = [
 ];
 
 const softSkills: SoftSkillItem[] = [
-  { icon: <UserPlus className="w-[100px] h-[80px] mx-auto" />, title: "Flexibilidade", description: "Capacidade de adaptação a funções e equipes diversas." },
-  { icon: <BicepsFlexed className="w-[100px] h-[80px] mx-auto" />, title: "Trabalho em equipe", description: "Colaboração eficaz para atingir metas em conjunto." },
-  { icon: <ShieldUser className="w-[100px] h-[80px] mx-auto" />, title: "Compromisso", description: "Dedicação e responsabilidade com tarefas e prazos." },
-  { icon: <Speech className="w-[100px] h-[80px] mx-auto" />, title: "Comunicação", description: "Clareza ao transmitir ideias e ouvir ativamente." }
+  { icon: <UserPlus className="w-[80px] h-[60px] md:w-[100px] md:h-[80px] mx-auto" />, title: "Flexibilidade", description: "Capacidade de adaptação a funções e equipes diversas." },
+  { icon: <BicepsFlexed className="w-[80px] h-[60px] md:w-[100px] md:h-[80px] mx-auto" />, title: "Trabalho em equipe", description: "Colaboração eficaz para atingir metas em conjunto." },
+  { icon: <ShieldUser className="w-[80px] h-[60px] md:w-[100px] md:h-[80px] mx-auto" />, title: "Compromisso", description: "Dedicação e responsabilidade com tarefas e prazos." },
+  { icon: <Speech className="w-[80px] h-[60px] md:w-[100px] md:h-[80px] mx-auto" />, title: "Comunicação", description: "Clareza ao transmitir ideias e ouvir ativamente." }
 ];
 
 function SkillCard({ src, title, description }: SkillItem) {
   return (
-    <div className="bg-white w-[180px] h-[210px] xl:w-[230px] xl:h-[240px] border-2 border-black p-4 rounded-2xl transform transition duration-300 hover:scale-105">
-      <Image className="w-[50px] h-[50px] xl:w-[80px] xl:h-[60px] object-contain mx-auto" src={src} alt={title} />
-      <h2 className="font-bold text-xl xl:text-2xl mt-2">{title}</h2>
-      <p className="font-semibold text-sm xl:text-[18px] mt-2 text-gray-600">{description}</p>
+    <div className="bg-white w-[150px] h-[190px]  md:w-[180px] md:h-[210px] xl:w-[230px] xl:h-[240px] border-2 border-black p-4 rounded-2xl transform transition duration-300 hover:scale-105">
+      <Image className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] xl:w-[80px] xl:h-[60px] object-contain mx-auto" src={src} alt={title} />
+      <h2 className="font-bold text-[17px] mt-0 md:mt-2 md:text-xl xl:text-2xl ">{title}</h2>
+      <p className="font-semibold text-sm mt-0 md:mt-2 xl:text-[18px]  text-gray-600">{description}</p>
     </div>
   );
 }
 
 function SoftSkillCard({ icon, title, description }: SoftSkillItem) {
   return (
-    <div className="bg-white w-[180px] xl:w-[250px] h-[260px] border-2 border-black p-4 rounded-2xl transform transition duration-300 hover:scale-105">
+    <div className="bg-white w-[150px] md:w-[180px] xl:w-[250px] h-[260px] border-2 border-black p-4 rounded-2xl transform transition duration-300 hover:scale-105">
       {icon}
-      <h2 className="font-bold text-[20px] mt-2">{title}</h2>
-      <p className="font-semibold text-[18px] mt-2 text-gray-600">{description}</p>
+      <h2 className="font-bold text-[18px] md:text-[20px] mt-2">{title}</h2>
+      <p className="font-semibold text-[16px] md:text-[18px] mt-2 text-gray-600">{description}</p>
     </div>
   );
 }
