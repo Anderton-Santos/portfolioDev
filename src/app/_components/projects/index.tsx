@@ -17,6 +17,7 @@ import next from '../../../../public/nextdotjs.png';
 import post from '../../../../public/postgresql.png';
 import firebase from '../../../../public/firebase.png';
 import tailwind from '../../../../public/tailwindcss.png';
+import anUi from '../../../../public/anUii.png';
 
 export function Projects() {
   const { onRequestOpen } = use(OrderContext);
@@ -34,7 +35,7 @@ export function Projects() {
       ],
       links: [
         { label: "GitHub", url: "https://github.com/Anderton-Santos/PedeDeli-API" },
-        { label: "LinkedIn", url: "https://www.linkedin.com/posts/anderton-silva-165a32289_nodejs-typescript-express-activity-7337169248298897408-0Xlg" }
+        { label: "LinkedIn", url: "https://www.linkedin.com/posts/anderton-silva-165a32289_webdevelopment-typescript-nextjs-activity-7347437647339913216-pHy8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ" }
       ]
     },
     {
@@ -50,7 +51,7 @@ export function Projects() {
       ],
       links: [
         { label: "GitHub", url: "https://github.com/Anderton-Santos/PedeDeli-Front" },
-        { label: "LinkedIn", url: "https://www.linkedin.com/posts/anderton-silva-165a32289_nextjs-typescript-tailwindcss-activity-7337173373094891520-diLF" },
+        { label: "LinkedIn", url: "https://www.linkedin.com/posts/anderton-silva-165a32289_nextjs-typescript-nodejs-activity-7347438094524059648-QKxT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ"},
         { label: "YouTube", url: "https://youtu.be/xXRNyBCT2Yg" },
         { label: "Site", url: "https://pede-deli-front-git-main-anderton-santos-projects.vercel.app/" }
       ]
@@ -83,6 +84,22 @@ export function Projects() {
       links: [
         { label: "GitHub" },
         { label: "YouTube" }
+      ]
+    },
+
+    {
+      title: "AnUi Framework",
+      description: "Landing page responsiva desenvolvida para apresentar de forma moderna e profissional um framework fictício. Design limpo, foco em clareza e usabilidade.",
+      image: anUi,
+      techs: [
+        { icon: ts, name: "TypeScript" },
+        { icon: next, name: "React" },
+        { icon: tailwind, name: "Tailwind" }
+      ],
+      links: [
+        { label: "GitHub", url: "https://github.com/Anderton-Santos/lading-anUi" },
+        { label: "LinkedIn", url: "https://www.linkedin.com/posts/anderton-silva-165a32289_nextjs-typescript-tailwindcss-activity-7347045941243228160-MlL_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ" },
+        { label: "Site", }
       ]
     },
     {

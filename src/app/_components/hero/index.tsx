@@ -24,7 +24,7 @@ export function Hero() {
           <div className="hidden lg:flex flex-col items-center justify-center gap-6 mt-14">
             <span className="text-2xl text-white font-semibold">Confira meu Curriculo:</span>
             <a
-              href="https://drive.google.com/file/d/11ka7P2nGNdyStHiuHqmNtXxY8Z26lqxr/view"
+              href="https://drive.google.com/file/d/14afJV8DwKxOe3sK-epn-FGLQ90pp9uEX/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-4 py-2 bg-amber-300 text-gray-700 font-extrabold rounded-xl hover:bg-amber-400 transition"
@@ -60,7 +60,7 @@ export function Hero() {
           <span className="text-2xl text-white font-semibold">Confira meu Curriculo:</span>
           {/* <button className="w-[200px] h-[40px] bg-amber-300 text-gray-700 font-extrabold rounded-xl"> */}
             <a 
-              href="https://drive.google.com/file/d/1Q2HY2AVyPVOtmuIq6fUEOuxUIOKkeUqK/view"
+              href="https://drive.google.com/file/d/14afJV8DwKxOe3sK-epn-FGLQ90pp9uEX/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-4 py-2 bg-amber-300 text-gray-700 font-extrabold rounded-xl hover:bg-amber-400 transition"
