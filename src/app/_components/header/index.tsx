@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 w-full bg-[#03021a] py-6 px-4 z-[999] shadow-md">
+      <header className="fixed top-0 w-full bg-[#03021a] py-6 px-4 z-[9999] shadow-md">
         <div className="max-w-[1280px] mx-auto flex items-center justify-between">
           <h1 className="font-bold text-gray-400 text-2xl md:text-3xl">
             AndertonSantos<span className="text-white">.dev</span><span>&lt;/&gt;</span>
