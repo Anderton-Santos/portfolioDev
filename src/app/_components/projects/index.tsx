@@ -8,7 +8,7 @@ import projetoApi from '../../../../public/pededeli.png';
 import cilio from '../../../../public/Cilio.png';
 import pededeli from '../../../../public/pededeliweb.png';
 import closeDely from '../../../../public/closedely.png';
-import chamados from '../../../../public/controle.png';
+import parasempre from '../../../../public/parasempre.png';
 import node from '../../../../public/nodedotjs.png';
 import express from '../../../../public/express.png';
 import ts from '../../../../public/typescript.png';
@@ -51,11 +51,28 @@ export function Projects() {
       ],
       links: [
         { label: "GitHub", url: "https://github.com/Anderton-Santos/PedeDeli-Front" },
-        { label: "LinkedIn", url: "https://www.linkedin.com/posts/anderton-silva-165a32289_nextjs-typescript-nodejs-activity-7347438094524059648-QKxT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ"},
+        { label: "LinkedIn", url: "https://www.linkedin.com/posts/anderton-silva-165a32289_nextjs-typescript-nodejs-activity-7347438094524059648-QKxT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYZCV0B5A57KJN7bXF9CdH8xl5KtEtUavQ" },
         { label: "YouTube", url: "https://youtu.be/xXRNyBCT2Yg" },
         { label: "Site", url: "https://pede-deli-front-git-main-anderton-santos-projects.vercel.app/" }
       ]
     },
+
+    {
+      title: "ParaSempre - Homenagens",
+      description: "ParaSempre – plataforma para criar páginas personalizadas para casais. Permite adicionar fotos, mensagens, tempo de união, músicas e locais especiais. Desenvolvi o front-end e o back-end usando Next.js",
+      image: parasempre,
+      techs: [
+        { icon: ts, name: "TypeScript" },
+        { icon: react, name: "React" },
+        { icon: tailwind, name: "Tailwind" }
+      ],
+      links: [
+        { label: "GitHub", url: "https://github.com/Anderton-Santos/LeadingPage-LashDesigner" },
+        { label: "LinkedIn" },
+        { label: "Site", url: "https://para-sempre-eta.vercel.app/" }
+      ]
+    },
+
     {
       title: "Cílios da Maria",
       description: "Site institucional com apresentação da profissional, tabelas de preços organizadas por serviço e rotas com links diretos para contato.",
@@ -69,21 +86,6 @@ export function Projects() {
         { label: "GitHub", url: "https://github.com/Anderton-Santos/LeadingPage-LashDesigner" },
         { label: "LinkedIn" },
         { label: "Site", url: "https://leading-page-lash-designer.vercel.app/" }
-      ]
-    },
-    {
-      title: "CloseDely - Gestão de pedidos",
-      description: "Sistema de registro de pedidos externos (WhatsApp e apps de delivery), permitindo melhor organização com cálculos separados por forma de pagamento e plataforma.",
-      image: closeDely,
-      techs: [
-        { icon: ts, name: "TypeScript" },
-        { icon: react, name: "React" },
-        { icon: firebase, name: "Firebase" },
-        { icon: tailwind, name: "Tailwind" }
-      ],
-      links: [
-        { label: "GitHub" },
-        { label: "YouTube" }
       ]
     },
 
@@ -102,28 +104,13 @@ export function Projects() {
         { label: "Site", }
       ]
     },
-    {
-      title: "DevControle - Chamados",
-      description: "Sistema de controle de chamados que permite visualizar solicitações em andamento e cadastrar clientes para melhor gestão do atendimento.",
-      image: chamados,
-      techs: [
-        { icon: ts, name: "TypeScript" },
-        { icon: react, name: "React" },
-        { icon: next, name: "Next" },
-        { icon: firebase, name: "Firebase" },
-        { icon: tailwind, name: "Tailwind" }
-      ],
-      links: [
-        { label: "GitHub" },
-        { label: "LinkedIn" }
-      ]
-    }
+
   ];
 
   return (
-    <section id="projetos" className="bg-blue-950 p-12">
-      <h1 className="text-4xl font-bold mb-12 text-center text-white">Projetos</h1>
-      <div className="grid grid-cols-1 gap-14 place-items-center sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+    <section id="projetos" className="bg-[#03021a] p-12">
+      <h1 className="text-3xl font-bold mb-12 text-center text-white font-orbitron">Projetos em que desenvolvi</h1>
+      <div className="grid grid-cols-1 gap-14 place-items-center">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

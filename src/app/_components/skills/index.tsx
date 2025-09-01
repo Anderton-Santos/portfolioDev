@@ -58,9 +58,9 @@ const softSkills: SoftSkillItem[] = [
 
 function SkillCard({ src, title, description }: SkillItem) {
   return (
-    <div className="bg-white w-[150px] h-[190px]  md:w-[180px] md:h-[210px] xl:w-[230px] xl:h-[240px] border-2 border-black p-4 rounded-2xl transform transition duration-300 hover:scale-105">
-      <Image className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] xl:w-[80px] xl:h-[60px] object-contain mx-auto" src={src} alt={title} />
-      <h2 className="font-bold text-[17px] mt-0 md:mt-2 md:text-xl xl:text-2xl ">{title}</h2>
+    <div className=" w-[150px] h-[190px]  md:w-[180px] md:h-[210px] xl:w-[230px] xl:h-[240px] border-2 border-black p-4 rounded-2xl transform transition duration-300 hover:scale-105">
+      <Image className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] xl:w-[80px] xl:h-[60px] object-contain mx-auto filter invert" src={src} alt={title} />
+      <h2 className="font-medium text-[15px] mt-0 md:mt-2 md:text-xl xl:text-2xl text-white ">{title}</h2>
       <p className="font-semibold text-sm mt-0 md:mt-2 xl:text-[18px]  text-gray-600">{description}</p>
     </div>
   );
@@ -78,12 +78,12 @@ function SoftSkillCard({ icon, title, description }: SoftSkillItem) {
 
 export function Skills() {
   return (
-    <section id="habilidades" className="bg-blue-500 text-white text-center p-12">
-      <h1 className="text-5xl font-bold mb-12">Habilidades</h1>
+    <section id="habilidades" className="bg-[#03021a] text-white text-center p-12">
+      <h1 className="text-3xl font-bold mb-12 font-orbitron">Tecnologias que trabalho</h1>
 
       <div className="mb-10">
-        <h2 className="text-3xl font-semibold">Tecnologias Front-End</h2>
-        <div className="h-1 w-64 bg-white mt-2 rounded mx-auto" />
+        <h2 className="text-[20px] text-start font-semibold font-orbitron">Front-End</h2>
+        <div className=" h-[2px] w-64 bg-white mt-1 rounded mx-auto" />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center text-black">
         {frontSkills.map((skill, index) => (
@@ -92,8 +92,8 @@ export function Skills() {
       </div>
 
       <div className="my-16">
-        <h2 className="text-3xl font-semibold">Tecnologias Back-End</h2>
-        <div className="h-1 w-64 bg-white mt-2 rounded mx-auto" />
+        <h2 className="text-[20px] text-start font-semibold font-orbitron">Back-End</h2>
+        <div className="h-[2px] w-64 bg-white mt-2 rounded mx-auto" />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center text-black">
         {backSkills.map((skill, index) => (
@@ -102,8 +102,9 @@ export function Skills() {
       </div>
 
       <div className="my-16">
-        <h2 className="text-3xl font-bold">Habilidades Comportamentais</h2>
+        <h2 className="text-3xl font-bold font-orbitron">Habilidades Comportamentais</h2>
         <div className="h-1 w-64 bg-white mt-2 rounded mx-auto" />
+
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center text-black">
         {softSkills.map((skill, index) => (

@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed top-0 w-full bg-blue-900 py-6 px-4 z-[999] shadow-md">
+      <header className="fixed top-0 w-full bg-[#03021a] py-6 px-4 z-[999] shadow-md">
         <div className="max-w-[1280px] mx-auto flex items-center justify-between">
           <h1 className="font-bold text-gray-400 text-2xl md:text-3xl">
             AndertonSantos<span className="text-white">.dev</span><span>&lt;/&gt;</span>
@@ -42,9 +42,8 @@ export function Header() {
 
       {/* Sidebar Mobile */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-blue-950 shadow-xl z-[1000] transform transition-transform duration-300 ${
-          isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed top-0 right-0 h-full w-64 bg-[#03021a] shadow-xl z-[1000] transform transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex items-center justify-between p-4 border-b border-white">
           <h2 className="text-white font-bold text-xl">Menu</h2>
@@ -53,12 +52,12 @@ export function Header() {
           </button>
         </div>
 
-        <nav className="flex flex-col gap-6 p-6 text-white font-bold text-lg">
-          <button onClick={() => scrollToSection("")}>Home</button>
-          <button onClick={() => scrollToSection("sobre")}>Sobre</button>
-          <button onClick={() => scrollToSection("projetos")}>Projetos</button>
-          <button onClick={() => scrollToSection("habilidades")}>Habilidades</button>
-          <button onClick={() => scrollToSection("contato")}>Contato</button>
+        <nav className="flex flex-col gap-6 p-6 text-gray-300 font-orbitron font text-lg">
+          <button onClick={() => scrollToSection("")}>1. Home</button>
+          <button onClick={() => scrollToSection("sobre")}>2. Sobre</button>
+          <button onClick={() => scrollToSection("projetos")}>3. Projetos</button>
+          <button onClick={() => scrollToSection("habilidades")}>4. Habilidades</button>
+          <button onClick={() => scrollToSection("contato")}>5. Contato</button>
         </nav>
       </div>
 

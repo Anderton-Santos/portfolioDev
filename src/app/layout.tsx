@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
 
 import { OrderProvider } from '@/providers/modal';
 
-
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,13 +31,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-  <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-    <OrderProvider>
-      {children}
-    </OrderProvider>
-    
-  </body>
-</html>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} antialiased`}>
+        <OrderProvider>
+          {children}
+        </OrderProvider>
+
+      </body>
+    </html>
 
   );
 }
