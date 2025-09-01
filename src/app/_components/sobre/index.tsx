@@ -1,11 +1,20 @@
+"use client"
+
 import anderDev from '../../../../public/anderDevv.png'
 import Image from "next/image";
+
+import { motion } from 'framer-motion'
 
 
 export function Sobre() {
     return (
         <div className="w-full  bg-[#03021a]">
-            <section id="sobre" className="container flex items-center justify-center mx-auto text-center bg-[#03021a]">
+            <motion.section
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}  // anima apenas na primeira vez
+                id="sobre" className="container flex items-center justify-center mx-auto text-center bg-[#03021a]">
 
 
                 <div className="max-w-4xl p-14 mx-auto text-[16px] md:text-[19px] text-center md:text-justify font-semibold text-gray-400 mt-10">
@@ -37,7 +46,7 @@ export function Sobre() {
                         priority={true}
                     />
                 </div>
-            </section>
+            </motion.section>
         </div>
 
     );
