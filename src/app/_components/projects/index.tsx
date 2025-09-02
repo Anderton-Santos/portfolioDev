@@ -85,7 +85,7 @@ export function Projects() {
       links: [
         { label: "GitHub", url: "https://github.com/Anderton-Santos/LeadingPage-LashDesigner" },
         { label: "LinkedIn" },
-        { label: "Site", url: "https://leading-page-lash-designer.vercel.app/" }
+        { label: "Site", url: "" }
       ]
     },
 
